@@ -1,0 +1,85 @@
+{
+  "home": {
+    "hero": {
+      "title": "Collections",
+      "subTitle": "L'ultime",
+      "paragraph": "Nous ne divisons pas nos collections en sections, nous créons de nouveaux modèles chaque semaine, sous différentes formes.",
+      "cta": "Acheter la dernière collection",
+      "bubble1": "20% de réduction",
+      "bubble2": "Collection été"
+    },
+    "seasonCollection": {
+      "title": "Collection Été 2025",
+      "subTitle": "Soldes d'été : jusqu'à 40% de réduction",
+      "cta": "Découvrez notre collection d'été"
+    },
+    "scrollBox": {
+      "title": "Soyez vu, soyez inoubliable",
+      "subTitle": "Le style n'est pas une option - c'est essentiel"
+    },
+    "collections": {
+      "tops": "collection de hauts",
+      "shoes": "collection de chaussures"
+    },
+    "clickToWear": {
+      "title": "Votre style, notre touche.",
+      "subTitle": "Votre look à un clic"
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "subTitle": "NOUS SOMMES LÀ POUR RÉPONDRE À VOS QUESTIONS",
+      "questions": {
+        "1": {
+          "q": "Livrez-vous à l'international ?",
+          "a": "Oui, nous livrons dans le monde entier. Nous livrons actuellement dans plus de 65 pays. Les frais de livraison seront appliqués et ajoutés à la commande.\n\nLa livraison est gratuite pour les commandes supérieures à 85$.\n\nNous offrons des réductions et des promotions toute l'année, alors restez informé pour des offres exclusives."
+        },
+        "2": {
+          "q": "Combien de temps faut-il pour recevoir ma commande ?",
+          "a": "Nous connaissons actuellement un volume de commandes très élevé. Toutes les commandes seront expédiées sous <b>24 à 48 heures</b>, et la livraison prendra environ <b>5 à 7 jours ouvrables</b> selon votre emplacement.\n\nNous livrons dans tous les pays sauf certaines îles.\n\nLes détails de livraison seront fournis à la commande et dans l’e-mail de confirmation."
+        },
+        "3": {
+          "q": "Livrez-vous dans mon pays ?",
+          "a": "Nous avons exclu les pays où la livraison est impossible. Si vous pouvez passer à la caisse, cela signifie que nous livrons dans votre pays."
+        },
+        "4": {
+          "q": "Quelles sont les règles de retour ?",
+          "a": "Vous pouvez retourner un produit pour n'importe quelle raison dans un délai de <b>14 jours garanti</b>. Aucune question posée.\n\nAucun frais de retour ou de traitement.\n\nLe client doit seulement payer l’étiquette de retour."
+        },
+        "5": {
+          "q": "Autres questions ?",
+          "a": "Vous pouvez nous contacter via notre page de contact ! Nous serons ravis de vous aider."
+        }
+      },
+      "paragraph": "Besoin de plus d'aide ? Notre équipe support est là pour vous.",
+      "cta": "ASSISTANCE"
+    }
+  },
+  "components": {
+    "collectionHeader": {
+      "cta": "VOIR TOUT"
+    },
+    "clothCard": {
+      "discount": "Réduction",
+      "cta": "Ajouter au panier"
+    }
+  },
+  "layouts": {
+    "nav": {
+      "home": "Accueil",
+      "about": "À propos",
+      "contact": "Contact",
+      "search": "Rechercher...",
+      "support": "Assistance",
+      "languages": {
+        "en": "Anglais",
+        "ar": "Arabe",
+        "fr": "Français"
+      }
+    },
+    "footer": {
+      "store": "Boutique",
+      "products": "Produits",
+      "rights": "© 2025 Fennec Wear. Tous droits réservés."
+    }
+  }
+}

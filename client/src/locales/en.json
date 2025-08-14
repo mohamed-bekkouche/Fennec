@@ -1,0 +1,720 @@
+{
+  "home": {
+    "hero": {
+      "title": "Collections",
+      "subTitle": "The Ultimate",
+      "paragraph": "We Do Not Devide Our Collections To Sections We Create New Models Every Week , And We in few forms",
+      "cta": "Buy Latest Collection",
+      "bubble1": "Get 20% Deiscount",
+      "bubble2": "Summer Collection"
+    },
+    "seasonCollection": {
+      "title": "Collection Summer 2025",
+      "subTitle": "Summer Sales : Up to 40% Discount",
+      "cta": "Discover Our Summer Collection"
+    },
+    "scrollBox": {
+      "title": "Be Seen, Be Remembred",
+      "subTitle": "Style Isn't Optional - It's Essential"
+    },
+    "collections": {
+      "topselling": "most selling",
+      "shoes": "shoes collection"
+    },
+    "customizeSuit": {
+      "title": " Customize Your Suit",
+      "subTitle": "Choose your suit elements and personalize your look.",
+      "ctaCollection": "Suit Collection",
+      "ctaCustomize": "Costumize Suit"
+    },
+    "clickToWear": {
+      "title": "Your Style, Our Touch.",
+      "subTitle": "Your Look, One Click Away"
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "subTitle": "WE ARE HERE TO ANSWER YOUR QUESTIONS",
+      "questions": {
+        "1": {
+          "q": "Do you ship overseas?",
+          "a": "Yes, we ship all over the world. We currently ship to 65+ countries. Shipping costs will apply, and will be added at checkout.\n\nCurrently Free Shipping applies on orders over 85$.\n\nWe run discounts and promotions all year, so stay tuned for exclusive deals on shipping."
+        },
+        "2": {
+          "q": "How long will it take to get my orders?",
+          "a": "We are currently experiencing a very high order volume, all orders will be dispatched within <b>24-48 hours</b>, and shipping will take around <b>5-7 business days</b> depending on your location. We ship to all countries except some Islands.\n\nDelivery details will be provided during checkout & in your confirmation email."
+        },
+        "3": {
+          "q": "Do you ship to my country?",
+          "a": "We excluded countries we can not ship to, from checking out. This means if you are able to check-out, we can ship to your country."
+        },
+        "4": {
+          "q": "What are the return rules?",
+          "a": "You can return a product for any reason within <b>14-days guaranteed</b>. No questions asked.\n\nWe do not charge a return or handling fee.\n\nThe customer only has to bear the return label."
+        },
+        "5": {
+          "q": "Other questions?",
+          "a": "You can contact us through our contact page! We will be happy to assist you."
+        }
+      },
+      "paragraph": " Need more help? Our support team is here for you.",
+      "cta": "SUPPORT"
+    }
+  },
+  "AboutUs": {
+    "hero": {
+      "title": "OUR STORY",
+      "subTitle": "Elevating Men's Style Since 2015"
+    },
+    "brandIntro": {
+      "title": "The Sartorial Legacy",
+      "paragraph1": "Founded in the historic city of Constantine, Algeria, we are more than just a clothing store — we are curators of timeless elegance. Specializing in suits and classic collections, we bring the \"Old Money\" aesthetic to the modern Algerian gentleman.",
+      "paragraph2": "Our philosophy is simple: clothing should make the man. Whether it's your wedding day, an important business meeting, or a special occasion, we provide the sartorial excellence that helps you command respect and confidence.",
+      "paragraph3": "Every stitch in our garments tells a story of craftsmanship, while every fabric selection speaks of our commitment to quality that stands the test of time."
+    },
+    "stats": {
+      "clients": "10k+ clients fitted since 2015",
+      "delivery": "24–48h delivery nationwide",
+      "coverage": "58 wilayas served across Algeria"
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Us",
+      "items": [
+        {
+          "title": "Uncompromising Quality",
+          "description": "We source only the finest fabrics and employ master tailors to ensure each piece meets our exacting standards."
+        },
+        {
+          "title": "Nationwide Delivery",
+          "description": "We deliver to all 58 wilayas in Algeria within 24–48 hours, bringing elegance to your doorstep."
+        },
+        {
+          "title": "Latest Collection & Modern Styles",
+          "description": "Stay ahead of trends with our ever-evolving collection, blending contemporary designs with timeless elegance."
+        }
+      ]
+    },
+    "process": {
+      "title": "The Elevate Experience",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Consultation",
+          "description": "Our style experts listen to understand your needs, occasion, and personal aesthetic."
+        },
+        {
+          "step": "02",
+          "title": "Fabric Selection",
+          "description": "Choose from our curated collection of premium wools, linens, and blends from Europe's finest mills."
+        },
+        {
+          "step": "03",
+          "title": "Precision Measurement",
+          "description": "Over 25 measurements ensure a fit that complements your unique physique."
+        },
+        {
+          "step": "04",
+          "title": "Tailoring & Delivery",
+          "description": "Our master tailors craft your garment with care, delivering nationwide within 48 hours."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Elevate Your Wardrobe?",
+      "description": "Discover the difference that true craftsmanship makes. Whether you're preparing for your wedding, upgrading your work wardrobe, or investing in timeless pieces, we're here to guide you every step of the way.",
+      "button": "Explore Our Collections"
+    }
+  },
+  "Contact": {
+    "hero": {
+      "title": "GET IN TOUCH",
+      "subTitle": "We'd love to hear from you"
+    },
+    "form": {
+      "title": "Send us a message",
+      "description": "Have a question about our products or need styling advice? We're here to help.",
+      "labels": {
+        "name": "Name",
+        "email": "Email",
+        "phoneNumber": "Phone Number",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "Your Name",
+        "email": "you@example.com",
+        "phoneNumber": "Your Phone Number",
+        "message": "Tell us about your inquiry..."
+      },
+      "validation": {
+        "nameRequired": "Name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email address",
+        "phoneRequired": "Phone number is required",
+        "phoneTooShort": "Too short to be valid",
+        "messageRequired": "Message is required",
+        "messageMin": "Message must be at least 20 characters"
+      },
+      "submit": {
+        "idle": "Send Message",
+        "loading": "Sending..."
+      },
+      "status": {
+        "success": "Thanks! Your message has been sent. We typically respond within 24 hours.",
+        "error": "Something went wrong. Please try again in a moment."
+      }
+    },
+    "info": {
+      "title": "Contact Information",
+      "description": "Reach out through any of these channels. We typically respond within 24 hours.",
+      "channels": [
+        {
+          "key": "email",
+          "title": "Email Us",
+          "content": "support@elevatestore.com",
+          "link": "mailto:support@elevatestore.com",
+          "badge": "Email"
+        },
+        {
+          "key": "whatsapp",
+          "title": "WhatsApp",
+          "content": "+1 (555) 123-4567",
+          "link": "https://wa.me/15551234567",
+          "badge": "Chat"
+        }
+      ],
+      "socials": [
+        {
+          "name": "Facebook",
+          "link": "#"
+        },
+        {
+          "name": "Instagram",
+          "link": "#"
+        },
+        {
+          "name": "TikTok",
+          "link": "#"
+        }
+      ],
+      "hours": {
+        "title": "Customer Support Hours",
+        "lines": [
+          "Monday – Friday: 9:00 AM – 6:00 PM (EST)",
+          "Saturday: 10:00 AM – 4:00 PM (EST)",
+          "Sunday: Closed"
+        ]
+      }
+    }
+  },
+  "auth": {
+    "cta": "Back To Website"
+  },
+  "login": {
+    "title": "Welcome Back",
+    "subTitle": "Login and explore our latest collections",
+    "or": "OR",
+    "emailPlaceholder": "Enter your email",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email address",
+    "passwordPlaceholder": "Enter your Password",
+    "passwordRequired": "Password is required",
+    "passwordInvalid": "Password must be at least 6 characters",
+    "cta": "Continue",
+    "note": "Don't have an account?",
+    "redirectCTA": "Sign in",
+    "success": "Login Success",
+    "error": "Login Failed"
+  },
+  "register": {
+    "title": "Welcome To Fennec",
+    "subTitle": "Sign up and make your style better",
+    "usernamePlaceholder": "Enter your Name",
+    "usernameRequired": "Name is required",
+    "usernameInvalid": "Name must be at least 3 characters",
+    "note": "You Already have an account?",
+    "redirectCTA": "Log in",
+    "success": "Register Successfully",
+    "error": "Register Failed"
+  },
+  "orders": {
+    "cart": {
+      "title": "Shopping Cart",
+      "subTitle": "items in your cart",
+      "empty": "Your cart is empty",
+      "product": "Product",
+      "color": "Color",
+      "size": "Size",
+      "price": "Price",
+      "quantity": "Quantity",
+      "total": "Total",
+      "summaryTitle": "Order Summary",
+      "clearCart": "clear Cart",
+      "checkout": "Proceed to Checkout",
+      "handPayment": "Hand Payment",
+      "fastDelivery": "Fast Delivery",
+      "premuimFabrics": "Premuim Fabrics",
+      "confirmationModalTitle": "Clear Cart",
+      "confirmationModalMessage": "Are you sure you want to remove all items from your cart? This action cannot be undone."
+    },
+    "checkout": {
+      "couponPlaceholder": "Discount Code",
+      "couponInvalid": "Discount code must be at least 3 characters",
+      "couponCTA": "Apply",
+      "items": "Items",
+      "discount": "Discount",
+      "total": "Total"
+    },
+    "orderConfirmation": {
+      "deliveryInfo": {
+        "title": "Delivery Information",
+        "fullName": "Full Name",
+        "fullNamePlaceholder": "Enter your full name",
+        "fullNameRequired": "Full name is required",
+        "fullNameMinLength": "Full name must be at least 2 characters",
+        "phone": "Phone Number",
+        "phonePlaceholder": "0555123456",
+        "phoneRequired": "Phone number is required",
+        "phonePattern": "Phone must be 10 digits starting with 05, 06, or 07",
+        "wilaya": "Wilaya",
+        "wilayaRequired": "Wilaya is required",
+        "selectWilaya": "Select Wilaya",
+        "commune": "Commune",
+        "communePlaceholder": "Enter commune",
+        "communeRequired": "Commune is required",
+        "communeMinLength": "Commune must be at least 2 characters",
+        "notes": "Additional Notes",
+        "notesPlaceholder": "Any special instructions for delivery...",
+        "optional": "(Optional)"
+      },
+      "deliveryMethod": {
+        "title": "Delivery Method",
+        "home": {
+          "label": "Home Delivery",
+          "description": "Delivered to your address",
+          "cost": "+{{cost}}"
+        },
+        "pickup": {
+          "label": "Store Pickup",
+          "description": "Pick up from store",
+          "cost": "Free"
+        }
+      },
+      "orderSummary": {
+        "title": "Order Summary",
+        "subtotal": "Subtotal ({{count}} items)",
+        "discount": "Discount",
+        "shipping": "Shipping",
+        "total": "Total"
+      },
+      "confirmButton": "Confirm Order"
+    },
+    "orders": {
+      "success": {
+        "notFound": {
+          "title": "Order Not Found",
+          "subtitle": "We couldn't find the order you're looking for."
+        },
+        "status": {
+          "title": {
+            "pending": "Order Placed! Awaiting Confirmation",
+            "confirmed": "Order Confirmed",
+            "shipped": "Order Shipped to Your Wilaya",
+            "delivered": "Order Delivered",
+            "cancelled": "Order Cancelled",
+            "returned": "Order Returned"
+          },
+          "subtitle": {
+            "pending": "We're waiting to confirm your order. One of our agents will call you soon.",
+            "confirmed": "Your order has been confirmed and is being prepared for shipment.",
+            "shipped": "Your order is on its way to your Wilaya.",
+            "delivered": "You have received your order. Thank you for shopping with us!",
+            "cancelled": "Your order has been cancelled. If this was a mistake, feel free to reorder.",
+            "returned": "Your order was returned due to failed delivery. Please contact support if needed."
+          }
+        },
+        "orderCard": {
+          "title": "Order Details",
+          "orderNumber": "Order Number",
+          "orderDate": "Order Date",
+          "totalAmount": "Total Amount",
+          "paymentMethod": "Payment Method",
+          "cash": "Cash",
+          "deliveryMethod": "Delivery Method",
+          "home": "Home Delivery",
+          "pickup": "Store Pickup",
+          "shippingAddress": "Shipping Address",
+          "pickupLocation": "Pickup Location"
+        },
+        "timeline": {
+          "deliveryTitle": "Delivery Timeline",
+          "pickupTitle": "Pickup Timeline",
+          "estimatedDelivery": "Estimated Delivery",
+          "estimatedPickup": "Estimated Pickup",
+          "statusLabel": "Status"
+        },
+        "steps": {
+          "pending": "Pending Confirmation",
+          "confirmed": "Confirmed by Team",
+          "shipped": "Shipped to Wilaya",
+          "delivered": "Delivered to Client",
+          "cancelled": "Cancelled",
+          "returned": "Returned by Client"
+        },
+        "items": {
+          "title": "Order Items",
+          "color": "Color",
+          "size": "Size",
+          "qty": "Qty",
+          "each": "each"
+        },
+        "actions": {
+          "track": "Track Your Order",
+          "continue": "Continue Shopping"
+        },
+        "help": {
+          "emailSent": "We've sent a confirmation email to your registered email address.",
+          "needHelp": "Need help? Contact our support team at",
+          "supportEmail": "fennec@example.com"
+        },
+        "errors": {
+          "fetchFailed": "Failed to fetch order"
+        }
+      },
+      "list": {
+        "header": {
+          "title": "My Orders",
+          "subTitle": "{{count}} orders found"
+        },
+        "filters": {
+          "title": "Filters",
+          "searchPlaceholder": "Search by order number...",
+          "deliveryMethod": {
+            "all": "All Methods",
+            "home": "Home",
+            "pickup": "Pickup"
+          },
+          "status": {
+            "all": "All Status",
+            "pending": "Pending",
+            "confirmed": "Confirmed",
+            "shipped": "Shipped",
+            "delivered": "Delivered",
+            "returned": "Returned",
+            "cancelled": "Cancelled"
+          },
+          "clear": "Clear Filters"
+        },
+        "empty": {
+          "title": "No orders found",
+          "hint": "Try adjusting your filters"
+        },
+        "table": {
+          "orderId": "Order ID",
+          "date": "Date",
+          "products": "Products",
+          "status": "Status",
+          "delivery": "Delivery",
+          "total": "Total",
+          "actions": "Actions"
+        },
+        "order": {
+          "deliveryMethod": {
+            "home": "Home",
+            "pickup": "Pickup"
+          },
+          "paymentMethod": {
+            "cash": "Cash"
+          },
+          "detail": "Detail",
+          "moreCount": "+{{count}}"
+        }
+      }
+    }
+  },
+  "products": {
+    "product": {
+      "addToCart": "Add to Cart",
+      "addToWishlist": "Add to Wishlist",
+      "removeFromWishlist": "Remove from Wishlist",
+      "quantity": "Quantity",
+      "size": "Size",
+      "color": "Color",
+      "description": "Description",
+      "reviews": "Reviews",
+      "relatedProducts": "Related Products",
+      "inStock": "In Stock",
+      "outOfStock": "Out of Stock",
+      "price": "Price",
+      "originalPrice": "Original Price",
+      "discount": "Discount",
+      "delivery": "Free Delivery",
+      "return": "4 Day Return",
+      "guarantee": "Quality Guarantee",
+      "buyNow": "Buy it now",
+      "selectColor": "Select Color",
+      "selectSize": "Select Size",
+      "addedToCart": "Success Adding Product",
+      "loginForWishlist": "Please login to manage your wishlist",
+      "addedToWishlist": "Product added to wishlist",
+      "removedFromWishlist": "Product removed from wishlist",
+      "wishlistUpdateFailed": "Failed to update wishlist",
+      "otherProducts": "You might also like",
+      "discoverProducs": "Discover more products that complement your style",
+      "zoom": "Click to exit zoom",
+      "exitZoom": "Click image to zoom"
+    },
+    "products": {
+      "list": {
+        "filters": {
+          "title": "Filters",
+          "subtitle": "Refine your search",
+          "searchLabel": "Search",
+          "searchPlaceholder": "Search products...",
+          "category": "Category",
+          "brand": "Brand",
+          "collection": "Collection",
+          "allCategories": "All Categories",
+          "allBrands": "All Brands",
+          "allCollections": "All Collections",
+          "priceRange": "Price Range",
+          "minPrice": "Min price",
+          "maxPrice": "Max price",
+          "sortBy": "Sort By",
+          "order": "Order",
+          "sortOptions": {
+            "createdAt": "Date",
+            "name": "Name",
+            "price": "Price",
+            "brand": "Brand",
+            "category": "Category"
+          },
+          "orderOptions": {
+            "asc": "A-Z",
+            "desc": "Z-A"
+          }
+        },
+        "activeChip": {
+          "search": "Search: \"{{q}}\"",
+          "category": "Category: {{name}}",
+          "brand": "Brand: {{name}}",
+          "collection": "Collection: {{name}}",
+          "min": "Min: ${{value}}",
+          "max": "Max: ${{value}}"
+        },
+        "clearAll": "Clear All",
+        "empty": {
+          "title": "No products found",
+          "subtitle": "We couldn't find any products matching your criteria. Try adjusting your filters or search terms.",
+          "cta": "Clear All Filters"
+        },
+        "toasts": {
+          "fetchFailed": "Failed to fetch products"
+        }
+      }
+    }
+  },
+  "activate": {
+    "title": "Verify Your Email",
+    "subTitle": "Please check your inbox and enter the code we sent to verify your email.",
+    "paragraph": "Enter all 4 digits using numbers only",
+    "note": "Didn’t receive the email?",
+    "ctaResend": "Resend Code",
+    "success": "Your Account Activated Successfully",
+    "error": "Failed to activate account"
+  },
+  "layouts": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact",
+      "search": "Search...",
+      "support": "Support",
+      "languages": {
+        "en": "English",
+        "ar": "Arabic",
+        "fr": "France"
+      },
+      "userDropdown": {
+        "success": "Log out success",
+        "error": "Log out failed",
+        "signUp": "Sign up",
+        "logIn": "Log in",
+        "logOut": "Log Out",
+        "setting": "Setting"
+      },
+      "searchToggleInput": {
+        "search": "Search...",
+        "close": "Close search",
+        "loading": "Loading…",
+        "min_length": "Type at least {{min}} characters",
+        "results": "{{count}} result(s)",
+        "no_results": "No products found",
+        "error_generic": "Something went wrong. Please try again."
+      }
+    },
+    "footer": {
+      "store": "Store",
+      "products": "Products",
+      "rights": "© 2025 Fennec Wear Company. All rights reserved."
+    }
+  },
+  "suits": {
+    "customize": {
+      "title": "Customize Your Look",
+      "subTitle": "Dress it up however you like! Choose your Style!",
+      "personalize": "Personalize",
+      "customize": "Customize",
+      "accessories": "Accessories",
+      "overview": "Overview"
+    },
+    "overview": {
+      "totalPrice": "Total Price",
+      "addToCart": "Add To Cart",
+      "returnToAccessories": "Return to accessories",
+      "addedToCart": "All Products Added To Cart"
+    },
+    "accessories": {
+      "belt": "Belt",
+      "pocketSquare": "Pocket Square",
+      "returnToCustomize": "Return to customize",
+      "continue": "Continue"
+    },
+    "personalize": {
+      "title": "Personalize Your Suit",
+      "subTitle": "Choose your preferred style and fit"
+    },
+    "suitCustomize": {
+      "title": "Customize Elements",
+      "subTitle": "Select jacket, pants, and other elements",
+      "shirt": "Shirt",
+      "tie": "Tie",
+      "shoes": "Shoes",
+      "jacket": "Jacket",
+      "vest": "Vest",
+      "pants": "Pants",
+      "returnToPersonalize": "Return to personalize"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "settings": "Settings",
+    "orders": "Orders",
+    "wishList": "Wish List"
+  },
+  "wishList": {
+    "title": "Style in Waiting",
+    "subTitle": "grab them while you can"
+  },
+  "confirmEmail": {
+    "title": "Confirm Your Email",
+    "instruction": "Please enter the code we sent to confirm your email.",
+    "verifyEmail": "Verify Email",
+    "enterAllDigits": "Enter all 4 digits using numbers only",
+    "didntReceive": "Didn't receive the email?",
+    "resendCode": "Resend Code",
+    "emailConfirmed": "Your Email Confirmed Successfully",
+    "confirmationFailed": "Failed to confirm Your email"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "message": "The page you're looking for doesn't exist.",
+    "backHome": "Back to Home"
+  },
+  "components": {
+    "collectionHeader": {
+      "cta": "VIEW ALL"
+    },
+    "clothCard": {
+      "discount": "Discount",
+      "cta": "Add To card"
+    },
+    "pagination": {
+      "previousPage": "Previous page",
+      "nextPage": "Next page",
+      "goToPage": "Go to page"
+    },
+    "confirmationModal": {
+      "confirm": "Confirm",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "update": "Update",
+      "save": "Save"
+    },
+    "suitElements": {
+      "nothing": "Nothing",
+      "availableOptions": "Available Options",
+      "selectNothing": "Select Nothing"
+    },
+    "inputField": {
+      "optional": "(Optional)"
+    },
+    "orders": {
+      "orderDetails": "Order Details",
+      "orderInformation": "Order Information",
+      "orderNumber": "Order Number",
+      "orderDate": "Order Date",
+      "totalAmount": "Total Amount",
+      "status": "Status",
+      "shippingAddress": "Shipping Address",
+      "items": "Items",
+      "quantity": "Quantity",
+      "color": "Color",
+      "size": "Size",
+      "price": "Price",
+      "removeItem": "Remove item",
+      "totalItems": "Total Items",
+      "subtotal": "Subtotal",
+      "shipping": "Shipping",
+      "taxes": "Taxes",
+      "total": "Total",
+      "statusLabels": {
+        "pending": "Pending",
+        "confirmed": "Confirmed",
+        "shipped": "Shipped",
+        "delivered": "Delivered",
+        "returned": "Returned",
+        "cancelled": "Cancelled"
+      }
+    },
+    "auth": {
+      "continueWithGoogle": "Continue With Google",
+      "googleLoginSuccess": "Logged in with Google!",
+      "googleLoginFailed": "Google login failed"
+    },
+    "errors": {
+      "fetchCollections": "Failed to fetch collections",
+      "fetchProducts": "Failed to fetch products"
+    }
+  },
+
+  "settings": {
+    "title": "Profile & Settings",
+    "subTitle": "Keep your account information safe",
+    "uploadNewImage": "Upload new image",
+    "updateProfile": "Update profile",
+    "profileUpdated": "Profile updated successfully",
+    "usernameUpdated": "Username updated successfully",
+    "profilePictureUpdated": "Profile picture updated successfully",
+    "emailUpdated": "Email updated. Please confirm your new email",
+    "updateFailed": "Failed to update your profile. Please try again",
+    "makeChange": "Please make at least one change to update your profile",
+    "labels": {
+      "username": "User name",
+      "email": "Email",
+      "currentPassword": "Current password",
+      "newPassword": "New password",
+      "confirmNewPassword": "Confirm new password"
+    },
+    "placeholders": {
+      "username": "Update your name",
+      "email": "Enter your email",
+      "currentPassword": "Enter your password",
+      "newPassword": "Enter new password",
+      "confirmNewPassword": "Re-enter new password"
+    },
+    "forgotPasswordLink": "forgot password?"
+  },
+
+  "utils": {
+    "DA": "DA"
+  }
+}

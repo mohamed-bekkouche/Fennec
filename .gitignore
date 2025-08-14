@@ -1,0 +1,4 @@
+# Ignore all env files in all subfolders
+.env
+*.env
+!*.env.example

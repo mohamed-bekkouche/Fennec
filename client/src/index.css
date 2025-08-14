@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+/* The Seasons Font */
+@font-face {
+  font-family: "The Seasons";
+  src: url("/fonts/the-seasons-bold.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "The Seasons";
+  src: url("/fonts/the-seasons-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "The Seasons";
+  src: url("/fonts/the-seasons-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Inter Font */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter_Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter_Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter_Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter_SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-primary: #0b3d2e;
+  --color-secondary: #ee964b;
+  --color-gold: #d2b48c;
+  --color-off-white: #faf9f6;
+  --color-off-black: #212121;
+  --color-warm-gray: #2e2e2e;
+  --color-cold-gray: #e9e9e9;
+  --font-the-seasons: "The Seasons", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+/* @theme {
+  --color-primary: #0b3d2e; 
+  --color-secondary: #ee964b;
+  --color-gold: #d2b48c;
+  --color-off-white: #212121;
+  --color-off-black: #faf9f6;
+  --color-warm-gray: #e9e9e9;
+  --color-cold-gray: #2e2e2e;
+  --font-the-seasons: "The Seasons", sans-serif;
+  --font-inter: "Inter", sans-serif;
+} */
+
+* {
+  list-style-type: none;
+  box-sizing: border-box;
+}
+.container {
+  @apply mx-auto w-full max-w-[1350px] px-4 sm:px-6 lg:px-10;
+}
+
+button {
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+body {
+  color: var(--color-off-black);
+  background-color: var(--color-off-white);
+  font-family: var(--font-inter);
+  overflow-x: hidden;
+}
+
+@keyframes curve-text {
+  0% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+.navIcon {
+  @apply text-xl cursor-pointer text-off-black hover:scale-110 duration-300;
+}
+
+.navLink:hover,
+.navLink.active {
+  color: var(--color-off-white);
+  box-shadow: inset 0 -70px 0 0 var(--color-primary);
+  transition: 0.3s ease-in-out;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}

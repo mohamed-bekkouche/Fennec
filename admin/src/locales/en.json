@@ -1,0 +1,86 @@
+{
+  "home": {
+    "hero": {
+      "title": "Collections",
+      "subTitle": "The Ultimate",
+      "paragraph": "We Do Not Devide Our Collections To Sections We Create New Models Every Week , And We in few forms",
+
+      "cta": "Buy Latest Collection",
+      "bubble1": "Get 20% Deiscount",
+      "bubble2": "Summer Collection"
+    },
+    "seasonCollection": {
+      "title": "Collection Summer 2025",
+      "subTitle": "Summer Sales : Up to 40% Discount",
+      "cta": "Discover Our Summer Collection"
+    },
+    "scrollBox": {
+      "title": "Be Seen, Be Remembred",
+      "subTitle": "Style Isn't Optional - It's Essential"
+    },
+    "collections": {
+      "tops": "tops collection",
+      "shoes": "shoes collection"
+    },
+    "clickToWear": {
+      "title": "Your Style, Our Touch.",
+      "subTitle": "Your Look, One Click Away"
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "subTitle": "WE ARE HERE TO ANSWER YOUR QUESTIONS",
+      "questions": {
+        "1": {
+          "q": "Do you ship overseas?",
+          "a": "Yes, we ship all over the world. We currently ship to 65+ countries. Shipping costs will apply, and will be added at checkout.\n\nCurrently Free Shipping applies on orders over 85$.\n\nWe run discounts and promotions all year, so stay tuned for exclusive deals on shipping."
+        },
+        "2": {
+          "q": "How long will it take to get my orders?",
+          "a": "We are currently experiencing a very high order volume, all orders will be dispatched within <b>24-48 hours</b>, and shipping will take around <b>5-7 business days</b> depending on your location. We ship to all countries except some Islands.\n\nDelivery details will be provided during checkout & in your confirmation email."
+        },
+        "3": {
+          "q": "Do you ship to my country?",
+          "a": "We excluded countries we can not ship to, from checking out. This means if you are able to check-out, we can ship to your country."
+        },
+        "4": {
+          "q": "What are the return rules?",
+          "a": "You can return a product for any reason within <b>14-days guaranteed</b>. No questions asked.\n\nWe do not charge a return or handling fee.\n\nThe customer only has to bear the return label."
+        },
+        "5": {
+          "q": "Other questions?",
+          "a": "You can contact us through our contact page! We will be happy to assist you."
+        }
+      },
+      "paragraph": " Need more help? Our support team is here for you.",
+      "cta": "SUPPORT"
+    }
+  },
+  "components": {
+    "collectionHeader": {
+      "cta": "VIEW ALL"
+    },
+    "clothCard": {
+      "discount": "Discount",
+      "cta": "Add To card"
+    }
+  },
+  "layouts": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact",
+      "search": "Search...",
+      "support": "Support",
+      "languages": {
+        "en": "English",
+        "ar": "Arabic",
+        "fr": "France"
+      }
+    },
+    "footer": {
+      "store": "Store",
+      "products": "Products",
+      "rights": "© 2025 Fennec Wear Company. All rights reserved."
+    }
+  }
+}

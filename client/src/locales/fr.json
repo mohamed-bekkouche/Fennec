@@ -1,0 +1,402 @@
+{
+  "home": {
+    "hero": {
+      "title": "Collections Exclusives",
+      "subTitle": "L'élégance commence ici",
+      "paragraph": "Nous ne divisons pas nos collections en sections. Nous créons de nouveaux modèles chaque semaine, avec un esprit innovant et une touche contemporaine.",
+      "cta": "Acheter la dernière collection",
+      "bubble1": "-20% de réduction",
+      "bubble2": "Collection été"
+    },
+    "seasonCollection": {
+      "title": "Été 2025 avec un style unique",
+      "subTitle": "Soldes d'été : jusqu'à -40%",
+      "cta": "Découvrez notre collection d'été"
+    },
+    "scrollBox": {
+      "title": "Soyez vu, soyez inoubliable",
+      "subTitle": "Le style n'est pas une option, c'est essentiel"
+    },
+    "collections": {
+      "topselling": "Meilleures ventes",
+      "shoes": "Collection chaussures"
+    },
+    "customizeSuit": {
+      "title": "Personnalisez votre costume",
+      "subTitle": "Choisissez les éléments de votre costume et créez votre look.",
+      "ctaCollection": "Collection de costumes",
+      "ctaCustomize": "Personnaliser"
+    },
+    "clickToWear": {
+      "title": "Votre style, notre touche",
+      "subTitle": "Votre look, en un clic"
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "subTitle": "Nous sommes là pour répondre à vos questions",
+      "questions": {
+        "1": {
+          "q": "Expédiez-vous à l'international ?",
+          "a": "Oui, nous livrons dans plus de 65 pays à travers le monde. Les frais de livraison s'ajoutent au moment du paiement.\n\nLa livraison est gratuite pour les commandes de plus de 85$.\n\nSuivez nos offres pour bénéficier de réductions spéciales sur la livraison."
+        },
+        "2": {
+          "q": "Combien de temps faut-il pour recevoir ma commande ?",
+          "a": "Nous préparons les commandes en <b>24–48 heures</b> et la livraison prend environ <b>5–7 jours ouvrables</b> selon votre localisation. Nous livrons dans tous les pays sauf certaines îles.\n\nLes détails de livraison vous seront envoyés par email après confirmation de votre commande."
+        },
+        "3": {
+          "q": "Livrez-vous dans mon pays ?",
+          "a": "Si vous pouvez accéder à la page de paiement, cela signifie que nous livrons dans votre pays."
+        },
+        "4": {
+          "q": "Quelle est votre politique de retour ?",
+          "a": "Vous pouvez retourner un produit sous <b>14 jours</b> sans aucune justification.\n\nAucun frais de retour ou de traitement n'est appliqué.\n\nLe client prend uniquement en charge le coût de l'étiquette de retour."
+        },
+        "5": {
+          "q": "Autres questions ?",
+          "a": "Vous pouvez nous contacter via notre page de contact. Nous serons ravis de vous aider."
+        }
+      },
+      "paragraph": "Besoin d'aide supplémentaire ? Notre équipe est à votre écoute.",
+      "cta": "Contactez-nous"
+    }
+  },
+  "AboutUs": {
+    "hero": {
+      "title": "Notre histoire",
+      "subTitle": "Sublimer le style masculin depuis 2015"
+    },
+    "brandIntro": {
+      "title": "L'héritage sartorial",
+      "paragraph1": "Fondée dans la ville historique de Constantine, en Algérie, notre maison est bien plus qu'une simple boutique de vêtements : nous sommes les gardiens d'une élégance intemporelle. Spécialisés dans les costumes et les collections classiques, nous apportons l'esthétique \"Old Money\" à l'homme algérien moderne.",
+      "paragraph2": "Notre philosophie est simple : les vêtements font l'homme. Que ce soit pour votre mariage, une réunion d'affaires importante ou une occasion spéciale, nous offrons l'excellence sartoriale qui inspire respect et confiance.",
+      "paragraph3": "Chaque point de couture raconte une histoire de savoir-faire, et chaque tissu choisi témoigne de notre engagement envers une qualité qui résiste à l'épreuve du temps."
+    },
+    "stats": {
+      "clients": "Plus de 10 000 clients habillés depuis 2015",
+      "delivery": "Livraison nationale en 24–48h",
+      "coverage": "Service dans 58 wilayas en Algérie"
+    },
+    "whyChooseUs": {
+      "title": "Pourquoi nous choisir",
+      "items": [
+        {
+          "title": "Qualité irréprochable",
+          "description": "Nous utilisons uniquement les meilleurs tissus et faisons appel à des maîtres tailleurs pour garantir nos standards exigeants."
+        },
+        {
+          "title": "Livraison nationale",
+          "description": "Nous livrons dans les 58 wilayas d'Algérie en 24–48 heures."
+        },
+        {
+          "title": "Dernières collections & styles modernes",
+          "description": "Restez à la pointe de la mode avec nos collections en constante évolution, alliant design contemporain et élégance intemporelle."
+        }
+      ]
+    },
+    "process": {
+      "title": "L'expérience Elevate",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Consultation",
+          "description": "Nos experts en style prennent le temps de comprendre vos besoins, l'occasion et votre esthétique personnelle."
+        },
+        {
+          "step": "02",
+          "title": "Choix des tissus",
+          "description": "Sélectionnez parmi notre gamme de laines, de lin et de mélanges haut de gamme provenant des meilleurs ateliers européens."
+        },
+        {
+          "step": "03",
+          "title": "Mesures précises",
+          "description": "Plus de 25 mesures pour garantir un ajustement parfaitement adapté à votre morphologie."
+        },
+        {
+          "step": "04",
+          "title": "Confection & livraison",
+          "description": "Nos maîtres tailleurs réalisent votre vêtement avec soin et le livrent partout en Algérie sous 48h."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Prêt à sublimer votre garde-robe ?",
+      "description": "Découvrez la différence qu'apporte un véritable savoir-faire. Que vous prépariez votre mariage, renouveliez votre tenue professionnelle ou investissiez dans des pièces intemporelles, nous vous accompagnons à chaque étape.",
+      "button": "Découvrir nos collections"
+    }
+  },
+  "Contact": {
+    "hero": {
+      "title": "Contactez-nous",
+      "subTitle": "Nous serions ravis de vous lire"
+    },
+    "form": {
+      "title": "Envoyez-nous un message",
+      "description": "Vous avez une question sur nos produits ou besoin de conseils ? Nous sommes là pour vous aider.",
+      "labels": {
+        "name": "Nom",
+        "email": "E-mail",
+        "phoneNumber": "Numéro de téléphone",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "Votre nom",
+        "email": "vous@exemple.com",
+        "phoneNumber": "Votre numéro de téléphone",
+        "message": "Parlez-nous de votre demande..."
+      },
+      "validation": {
+        "nameRequired": "Le nom est obligatoire",
+        "emailRequired": "L'e-mail est obligatoire",
+        "emailInvalid": "Veuillez saisir une adresse e-mail valide",
+        "phoneRequired": "Le numéro de téléphone est obligatoire",
+        "phoneTooShort": "Numéro trop court",
+        "messageRequired": "Le message est obligatoire",
+        "messageMin": "Le message doit contenir au moins 20 caractères"
+      },
+      "submit": {
+        "idle": "Envoyer le message",
+        "loading": "Envoi en cours..."
+      },
+      "status": {
+        "success": "Merci ! Votre message a été envoyé. Nous vous répondrons sous 24h.",
+        "error": "Une erreur s'est produite. Veuillez réessayer."
+      }
+    },
+    "info": {
+      "title": "Informations de contact",
+      "description": "Vous pouvez nous joindre par l'un des moyens suivants. Réponse sous 24h en moyenne.",
+      "channels": [
+        {
+          "key": "email",
+          "title": "Nous écrire",
+          "content": "support@elevatestore.com",
+          "link": "mailto:support@elevatestore.com",
+          "badge": "E-mail"
+        },
+        {
+          "key": "whatsapp",
+          "title": "WhatsApp",
+          "content": "+1 (555) 123-4567",
+          "link": "https://wa.me/15551234567",
+          "badge": "Chat"
+        }
+      ],
+      "socials": [
+        {
+          "name": "Facebook",
+          "link": "#"
+        },
+        {
+          "name": "Instagram",
+          "link": "#"
+        },
+        {
+          "name": "TikTok",
+          "link": "#"
+        }
+      ],
+      "hours": {
+        "title": "Horaires d'ouverture",
+        "lines": [
+          "Lundi – Vendredi : 9h00 – 18h00",
+          "Samedi : 10h00 – 16h00",
+          "Dimanche : Fermé"
+        ]
+      }
+    }
+  },
+  "components": {
+    "collectionHeader": {
+      "cta": "Tout voir"
+    },
+    "clothCard": {
+      "discount": "Réduction",
+      "cta": "Ajouter au panier"
+    }
+  },
+  "layouts": {
+    "nav": {
+      "home": "Accueil",
+      "about": "À propos",
+      "contact": "Contact",
+      "search": "Rechercher...",
+      "support": "Support",
+      "languages": {
+        "en": "Anglais",
+        "ar": "Arabe",
+        "fr": "Français"
+      }
+    },
+    "footer": {
+      "store": "Boutique",
+      "products": "Produits",
+      "rights": "© 2025 Fennec Wear Company. Tous droits réservés."
+    }
+  },
+  "suits": {
+    "customize": {
+      "title": "Personnalisez Votre Look",
+      "subTitle": "Habillez-vous comme vous le souhaitez ! Choisissez votre style !",
+      "personalize": "Personnaliser",
+      "customize": "Personnaliser",
+      "accessories": "Accessoires",
+      "overview": "Aperçu"
+    },
+    "overview": {
+      "totalPrice": "Prix Total",
+      "addToCart": "Ajouter au Panier",
+      "returnToAccessories": "Retour aux accessoires",
+      "addedToCart": "Tous les produits ajoutés au panier"
+    },
+    "accessories": {
+      "belt": "Ceinture",
+      "pocketSquare": "Pochette",
+      "returnToCustomize": "Retour à la personnalisation",
+      "continue": "Continuer"
+    },
+    "personalize": {
+      "title": "Personnalisez Votre Costume",
+      "subTitle": "Choisissez votre style et votre coupe préférés"
+    },
+    "suitCustomize": {
+      "title": "Personnaliser les Éléments",
+      "subTitle": "Sélectionnez la veste, le pantalon et autres éléments",
+      "shirt": "Chemise",
+      "tie": "Cravate",
+      "shoes": "Chaussures",
+      "jacket": "Veste",
+      "vest": "Gilet",
+      "pants": "Pantalon",
+      "returnToPersonalize": "Retour à la personnalisation"
+    }
+  },
+  "dashboard": {
+    "title": "Tableau de Bord",
+    "settings": "Paramètres",
+    "orders": "Commandes",
+    "wishList": "Liste de Souhaits"
+  },
+  "settings": {
+    "title": "Profil et Paramètres",
+    "subTitle": "Gardez vos informations de compte en sécurité",
+    "uploadNewImage": "Télécharger une nouvelle image",
+    "updateProfile": "Mettre à jour le profil",
+    "profileUpdated": "Profil mis à jour avec succès",
+    "usernameUpdated": "Nom d'utilisateur mis à jour avec succès",
+    "profilePictureUpdated": "Photo de profil mise à jour avec succès",
+    "emailUpdated": "Email mis à jour. Veuillez confirmer votre nouvel email",
+    "updateFailed": "Échec de la mise à jour de votre profil. Veuillez réessayer",
+    "makeChange": "Veuillez apporter au moins une modification pour mettre à jour votre profil",
+    "newPassword": "Nouveau Mot de Passe",
+    "confirmNewPassword": "Confirmer le Nouveau Mot de Passe"
+  },
+  "wishList": {
+    "title": "Style en Attente",
+    "subTitle": "prenez-les tant que vous le pouvez"
+  },
+  "confirmEmail": {
+    "title": "Confirmez Votre Email",
+    "instruction": "Veuillez saisir le code que nous avons envoyé pour confirmer votre email.",
+    "verifyEmail": "Vérifier l'Email",
+    "enterAllDigits": "Saisissez les 4 chiffres en utilisant uniquement des nombres",
+    "didntReceive": "Vous n'avez pas reçu l'email ?",
+    "resendCode": "Renvoyer le Code",
+    "emailConfirmed": "Votre Email Confirmé avec Succès",
+    "confirmationFailed": "Échec de la confirmation de votre email"
+  },
+  "notFound": {
+    "title": "Page Non Trouvée",
+    "message": "La page que vous recherchez n'existe pas.",
+    "backHome": "Retour à l'Accueil"
+  },
+  "product": {
+    "addToCart": "Ajouter au Panier",
+    "addToWishlist": "Ajouter à la Liste de Souhaits",
+    "removeFromWishlist": "Retirer de la Liste de Souhaits",
+    "quantity": "Quantité",
+    "size": "Taille",
+    "color": "Couleur",
+    "description": "Description",
+    "reviews": "Avis",
+    "relatedProducts": "Produits Connexes",
+    "inStock": "En Stock",
+    "outOfStock": "Rupture de Stock",
+    "price": "Prix",
+    "originalPrice": "Prix Original",
+    "discount": "Remise",
+    "delivery": "Livraison Gratuite",
+    "return": "Retour 14 Jours",
+    "guarantee": "Garantie Qualité",
+    "buyNow": "Acheter maintenant",
+    "selectColor": "Sélectionner la Couleur",
+    "selectSize": "Sélectionner la Taille",
+    "shipping": "Livraison",
+    "deliveryTime": "Délai de Livraison",
+    "estimatedTime": "Temps Estimé",
+    "days": "Jours",
+    "addedToCart": "Produit ajouté avec succès",
+    "loginForWishlist": "Veuillez vous connecter pour gérer votre liste de souhaits",
+    "addedToWishlist": "Produit ajouté à la liste de souhaits",
+    "removedFromWishlist": "Produit retiré de la liste de souhaits",
+    "wishlistUpdateFailed": "Échec de la mise à jour de la liste de souhaits"
+  },
+  "components": {
+    "pagination": {
+      "previousPage": "Page précédente",
+      "nextPage": "Page suivante",
+      "goToPage": "Aller à la page"
+    },
+    "confirmationModal": {
+      "confirm": "Confirmer",
+      "cancel": "Annuler",
+      "delete": "Supprimer",
+      "update": "Mettre à jour",
+      "save": "Sauvegarder"
+    },
+    "suitElements": {
+      "nothing": "Rien",
+      "availableOptions": "Options Disponibles",
+      "selectNothing": "Sélectionner Rien"
+    },
+    "inputField": {
+      "optional": "(Optionnel)"
+    },
+    "orders": {
+      "orderDetails": "Détails de la Commande",
+      "orderInformation": "Informations de la Commande",
+      "orderNumber": "Numéro de Commande",
+      "orderDate": "Date de Commande",
+      "totalAmount": "Montant Total",
+      "status": "Statut",
+      "shippingAddress": "Adresse de Livraison",
+      "items": "Articles",
+      "quantity": "Quantité",
+      "color": "Couleur",
+      "size": "Taille",
+      "price": "Prix",
+      "removeItem": "Supprimer l'article",
+      "totalItems": "Total d'Articles",
+      "subtotal": "Sous-total",
+      "shipping": "Livraison",
+      "taxes": "Taxes",
+      "total": "Total",
+      "statusLabels": {
+        "pending": "En Attente",
+        "confirmed": "Confirmé",
+        "shipped": "Expédié",
+        "delivered": "Livré",
+        "returned": "Retourné",
+        "cancelled": "Annulé"
+      }
+    },
+    "auth": {
+      "continueWithGoogle": "Continuer avec Google",
+      "googleLoginSuccess": "Connecté avec Google !",
+      "googleLoginFailed": "Échec de la connexion Google"
+    },
+    "errors": {
+      "fetchCollections": "Échec du chargement des collections",
+      "fetchProducts": "Échec du chargement des produits"
+    }
+  }
+}
