@@ -566,7 +566,6 @@ const Product = () => {
                             transition: "transform 120ms",
                           }
                     }
-                    draggable={false}
                   />
                 </div>
                 <p className="text-white/70 text-xs mt-2 text-center">

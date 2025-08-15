@@ -27,4 +27,5 @@ dist-ssr
 # Environment files
 .env
 .env.local
-.env*.local
+.env*.localdist
+node_modules # if not already

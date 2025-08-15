@@ -3,7 +3,7 @@ import { getAccessToken, setAccessToken, logout } from "../hooks/useAuth";
 
 const api = axios.create({
   baseURL:
-    import.meta.env.VITE_API_URL + "/api" || "http://10.19.118.85:8000/api",
+    import.meta.env.VITE_API_URL + "/api" || "http://10.195.216.85:8000/api",
   withCredentials: true,
 });
 

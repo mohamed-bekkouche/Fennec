@@ -46,7 +46,6 @@ const Orders = () => {
   const [isPreviewModalOpen, setIsPreviewModalOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [pages, setPages] = useState(1);
-  const [loading, setLoading] = useState(true);
   const limit = 10;
 
   const statuses: orderStatus[] = [
@@ -59,7 +58,6 @@ const Orders = () => {
   ];
 
   const fetchOrders = async () => {
-    setLoading(true);
     try {
       const {
         data: { orders, pages },
@@ -75,7 +73,6 @@ const Orders = () => {
     } catch (error) {
       console.error("Error fetching orders:", error);
     }
-    setLoading(false);
   };
 
   useEffect(() => {

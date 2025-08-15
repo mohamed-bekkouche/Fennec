@@ -8,6 +8,7 @@ interface IImage {
   fetchPriority?: "high" | "low" | "auto";
   referrerPolicy?: HTMLAttributeReferrerPolicy | undefined;
   fromServer?: boolean;
+  style?: React.CSSProperties;
 }
 
 const Image = ({
@@ -18,7 +19,7 @@ const Image = ({
   fetchPriority = "auto",
   referrerPolicy,
   fromServer = false,
-  ...props
+  style,
 }: IImage) => {
   return (
     <img
@@ -28,7 +29,7 @@ const Image = ({
       loading={loading}
       fetchPriority={fetchPriority}
       referrerPolicy={referrerPolicy}
-      {...props}
+      style={style}
     />
   );
 };

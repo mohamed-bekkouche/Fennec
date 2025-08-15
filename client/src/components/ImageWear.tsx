@@ -1,8 +1,8 @@
 import { type Dispatch, type SetStateAction } from "react";
-import type { IProductImage } from "../data/hotSpots";
 import HotSpot from "./HotSpot";
 import Image from "./Image";
 import type { IProduct } from "../types/Product";
+import type { IProductImage } from "../types/ProductImage";
 
 interface IImageWearProps {
   productImage: IProductImage;
