@@ -21,63 +21,25 @@ dotenv.config();
 
 const app = express();
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 // Read-only in production. Serving committed files is fine; don’t write here at runtime.
 const UPLOADS_DIR = path.resolve("src/uploads");
 app.use("/uploads", express.static(UPLOADS_DIR));
 
-// In your app.ts - Updated CORS section
+// CORS: use an allow-list (avoid throwing to prevent 500s)
 const allowedOrigins = [
   process.env.CLIENT_ORIGIN || "",
   process.env.ADMIN_ORIGIN || "",
-  process.env.PROD_CLIENT_ORIGIN || "", // Your Vercel frontend URL
+  process.env.PROD_CLIENT_ORIGIN || "", // e.g. https://your-frontend.netlify.app
   process.env.PROD_ADMIN_ORIGIN || "",
-  "http://localhost:3000", // For local development
-  "http://localhost:5173", // Vite default port
 ].filter(Boolean);
-
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      // Allow requests with no origin (mobile apps, curl, etc.)
-      if (!origin) return callback(null, true);
-
-      if (allowedOrigins.indexOf(origin) !== -1) {
-        callback(null, true);
-      } else {
-        console.log("CORS blocked origin:", origin);
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-  })
-);
-
-// Handle preflight requests
-app.options("*", cors());
-
-// Add explicit body parsing middleware
-app.use(express.json({ limit: "10mb" }));
-app.use(express.urlencoded({ extended: true, limit: "50mb" }));
+app.use(cors({ origin: allowedOrigins, credentials: true }));
 
 app.get("/api/data", (_req: Request, res: Response) => {
   res.json({ message: "API response" });
-});
-
-// Add this to your app.ts for debugging
-app.post("/api/test", (req: Request, res: Response) => {
-  console.log("Headers:", req.headers);
-  console.log("Body:", req.body);
-  console.log("Content-Type:", req.get("Content-Type"));
-
-  res.json({
-    message: "Test successful",
-    body: req.body,
-    contentType: req.get("Content-Type"),
-  });
 });
 
 app.use("/api/auth", authRouter);
