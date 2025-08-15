@@ -13,7 +13,7 @@ secrets/            # Folder for credential files
 # ========================
 # Dependency Directories
 # ========================
-node_modules/       # NPM packages (never commit this!)
+node_modules       # NPM packages (never commit this!)
 jspm_packages/
 .pnpm-store/
 
