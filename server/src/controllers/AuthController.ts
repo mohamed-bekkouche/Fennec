@@ -322,7 +322,8 @@ export const updateUser = async (
     const { username, password, newPassword, email } = req.body;
 
     const filename = req.file?.filename;
-    const user = await User.findById(req.user?.userId).select("+password");
+    const userId = req.user?.userId;
+    const user = await User.findById(userId).select("+password");
     if (!user) {
       res.status(404).json({ message: "User not found" });
       return;
