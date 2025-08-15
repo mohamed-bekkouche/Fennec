@@ -29,7 +29,7 @@ const UPLOADS_DIR = path.resolve("src/uploads");
 app.use("/uploads", express.static(UPLOADS_DIR));
 
 const allowedOrigins = [
-  process.env.CLIENT_ORIGIN || "http://localhost:5173",
+  process.env.CLIENT_ORIGIN || "http://10.195.216.85:5173",
   process.env.ADMIN_ORIGIN || "http://192.168.136.13:5173",
 ];
 
