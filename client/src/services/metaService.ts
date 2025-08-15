@@ -11,3 +11,10 @@ export const getAllBrands = async () => {
 export const getAllCollections = async () => {
   return await api.get("/collections");
 };
+
+export const testConnection = async () => {
+  return await api.post("/test", {
+    test: "data",
+    timestamp: new Date().toISOString(),
+  });
+};
