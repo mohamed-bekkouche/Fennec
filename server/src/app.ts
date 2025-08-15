@@ -22,7 +22,7 @@ dotenv.config();
 const app = express();
 
 app.use(express.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 // Read-only in production. Serving committed files is fine; don’t write here at runtime.

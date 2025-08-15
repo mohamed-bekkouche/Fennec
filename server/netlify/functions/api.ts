@@ -2,25 +2,18 @@
 import serverless from "serverless-http";
 
 export const handler = async (event: any, context: any) => {
-  try {
-    const { default: connectDB } = await import("../../src/config/database");
-    const { default: app } = await import("../../src/app");
+  const { default: app } = await import("../../src/app");
+  const { default: connectDB } = await import("../../src/config/database");
+  await connectDB();
 
-    if (process.env.SKIP_DB !== "1") {
-      await connectDB(); // cached, won't reconnect each time
-    }
+  // ✅ let serverless-http decode these encodings from base64
+  const expressHandler = serverless(app, {
+    binary: [
+      "application/x-www-form-urlencoded",
+      "multipart/form-data",
+      "text/plain",
+    ],
+  });
 
-    const expressHandler = serverless(app);
-    return await expressHandler(event, context);
-  } catch (err: any) {
-    console.error("FUNCTION FATAL:", err?.message);
-    return {
-      statusCode: 500,
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({
-        error: "Function crashed",
-        message: String(err?.message || err),
-      }),
-    };
-  }
+  return expressHandler(event, context);
 };
