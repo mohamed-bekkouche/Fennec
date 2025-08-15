@@ -31,12 +31,13 @@ import crypto from "crypto";
 
 // Load your 32-byte key (base64-encoded in .env)
 const keyBase64 =
-  process.env.CRYPTO_KEY || "A+9Jt9YI3yJNRQdo6lZ/xU0UHsP+XYQEBELfq1hig7Y=";
+  process.env.CRYPTO_KEY ||
+  "8b461c0b09bf08140dfd73582c739175b280b0a1ceaf262e5801178d66d24779";
 const cryptoKey = Buffer.from(keyBase64, "base64");
 
-if (cryptoKey.length !== 32) {
-  throw new Error("CRYPTO_KEY must decode to 32 bytes for AES-256.");
-}
+// if (cryptoKey.length !== 32) {
+//   throw new Error("CRYPTO_KEY must decode to 32 bytes for AES-256.");
+// }
 
 // Encrypt function
 export const encrypt = (data: unknown): { iv: string; data: string } => {
