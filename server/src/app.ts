@@ -31,8 +31,8 @@ app.use("/uploads", express.static(UPLOADS_DIR));
 
 // CORS: use an allow-list (avoid throwing to prevent 500s)
 const allowedOrigins = [
-  process.env.CLIENT_ORIGIN || "http://localhost:5173",
-  process.env.ADMIN_ORIGIN || "http://localhost:5173",
+  process.env.CLIENT_ORIGIN || "",
+  process.env.ADMIN_ORIGIN || "",
   process.env.PROD_CLIENT_ORIGIN || "", // e.g. https://your-frontend.netlify.app
   process.env.PROD_ADMIN_ORIGIN || "",
 ].filter(Boolean);
