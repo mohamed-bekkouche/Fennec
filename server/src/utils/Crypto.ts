@@ -29,3 +29,20 @@ export const decrypt = (encryptedData: string, ivHex: string) => {
   decrypted += decipher.final("utf8");
   return JSON.parse(decrypted);
 };
+
+// src/config/crypto.ts
+import { Buffer } from "buffer";
+let cached: Buffer | null = null;
+
+export function getAes256Key(): Buffer {
+  if (cached) return cached;
+  const raw0 = process.env.CRYPTO_KEY;
+  if (!raw0) throw new Error("CRYPTO_KEY is missing");
+  const raw = raw0.replace(/\s+/g, "");
+  const isHex = /^[0-9a-f]{64}$/i.test(raw);
+  const key = Buffer.from(raw, isHex ? "hex" : "base64");
+  if (key.length !== 32)
+    throw new Error("CRYPTO_KEY must decode to 32 bytes for AES-256");
+  cached = key;
+  return key;
+}
