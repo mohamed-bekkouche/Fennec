@@ -4,6 +4,7 @@ import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import path from "path";
+
 import connectDB from "./config/database";
 import authRouter from "./routes/AuthRouter";
 import productRouter from "./routes/ProductRouter";
@@ -20,29 +21,27 @@ dotenv.config();
 
 const app = express();
 
-// Parsers & cookies
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-// ⚠️ Static uploads: read-only on Vercel. OK to serve committed files,
-// but don't try to write here at runtime.
+// Read-only in production. Serving committed files is fine; don’t write here at runtime.
 const UPLOADS_DIR = path.resolve("src/uploads");
 app.use("/uploads", express.static(UPLOADS_DIR));
 
-// CORS: don’t throw (throwing produces 500s). Prefer array form.
+// CORS: use an allow-list (avoid throwing to prevent 500s)
 const allowedOrigins = [
-  process.env.CLIENT_ORIGIN || "http://10.195.216.85:5173",
-  process.env.ADMIN_ORIGIN || "http://192.168.136.13:5173",
-];
+  process.env.CLIENT_ORIGIN || "http://localhost:5173",
+  process.env.ADMIN_ORIGIN || "http://localhost:5173",
+  process.env.PROD_CLIENT_ORIGIN || "", // e.g. https://your-frontend.netlify.app
+  process.env.PROD_ADMIN_ORIGIN || "",
+].filter(Boolean);
 app.use(cors({ origin: allowedOrigins, credentials: true }));
 
-// Health check
 app.get("/api/data", (_req: Request, res: Response) => {
   res.json({ message: "API response" });
 });
 
-// Routes
 app.use("/api/auth", authRouter);
 app.use("/api/admin", adminRouter);
 app.use("/api/products", productRouter);

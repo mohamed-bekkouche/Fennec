@@ -1,0 +1,18 @@
+[build]
+  # If you don’t have a frontend, keep a tiny public/ dir (below).
+  publish = "public"
+
+  # No build command required for pure API, but you can keep one if you want.
+  # command = "npm run build"
+
+  # If your repo root is not "server/", set this in the Netlify UI as Base directory.
+  # (Since your code lives in server/, configure Base directory = server in the dashboard.)
+
+[functions]
+  node_bundler = "esbuild"
+  included_files = ["src/uploads/**"]   # bundles committed assets (read-only at runtime)
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/api"
+  status = 200
