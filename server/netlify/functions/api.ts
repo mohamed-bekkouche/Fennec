@@ -2,10 +2,12 @@
 import serverless from "serverless-http";
 import app from "../../src/app";
 import connectDB from "../../src/config/database";
+import { getAes256Key } from "../../src/utils/Token";
 
 // cache DB connection across invocations
 let dbReady: Promise<unknown> | null = null;
 function ensureDB() {
+  getAes256Key();
   if (!dbReady) dbReady = connectDB();
   return dbReady;
 }

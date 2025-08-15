@@ -2,10 +2,45 @@ import jwt, { JwtPayload } from "jsonwebtoken";
 import { encrypt } from "./Crypto";
 import { Response } from "express";
 import dotenv from "dotenv";
+import { Buffer } from "buffer";
 
 dotenv.config();
 
 const secret = process.env.JWT_SECRET || "default_secret_key";
+
+// src/config/crypto.ts
+
+/**
+ * Reads CRYPTO_KEY from env, strips ALL whitespace/newlines,
+ * supports 64-char hex OR base64, and verifies 32 bytes for AES-256.
+ */
+export function getAes256Key(): Buffer {
+  const raw0 = process.env.CRYPTO_KEY;
+  if (!raw0) throw new Error("CRYPTO_KEY is missing");
+
+  // remove any spaces, tabs, or newlines that may be in the UI paste
+  const raw = raw0.replace(/\s+/g, "");
+
+  const isHex = /^[0-9a-f]{64}$/i.test(raw);
+  const key = Buffer.from(raw, isHex ? "hex" : "base64");
+
+  // Optional: tiny diagnostic that doesn't leak secrets
+  if (process.env.NODE_ENV !== "production") {
+    console.log(
+      "CRYPTO_KEY chars:",
+      raw.length,
+      "isHex:",
+      isHex,
+      "bytes:",
+      key.length
+    );
+  }
+
+  if (key.length !== 32) {
+    throw new Error("CRYPTO_KEY must decode to 32 bytes for AES-256");
+  }
+  return key;
+}
 
 export const generateTokens = (
   userId: string,
