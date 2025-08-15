@@ -19,38 +19,30 @@ import suitElemntRouter from "./routes/SuitELementRouter";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 8000;
 
+// Parsers & cookies
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
+// ⚠️ Static uploads: read-only on Vercel. OK to serve committed files,
+// but don't try to write here at runtime.
 const UPLOADS_DIR = path.resolve("src/uploads");
 app.use("/uploads", express.static(UPLOADS_DIR));
 
+// CORS: don’t throw (throwing produces 500s). Prefer array form.
 const allowedOrigins = [
   process.env.CLIENT_ORIGIN || "http://10.195.216.85:5173",
   process.env.ADMIN_ORIGIN || "http://192.168.136.13:5173",
 ];
+app.use(cors({ origin: allowedOrigins, credentials: true }));
 
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      // Allow requests with no origin (like mobile apps or curl)
-      if (!origin) return callback(null, true);
-      if (allowedOrigins.includes(origin)) {
-        return callback(null, true);
-      }
-      return callback(new Error("Not allowed by CORS"));
-    },
-    credentials: true,
-  })
-);
-
-app.get("/api/data", (req, res) => {
+// Health check
+app.get("/api/data", (_req: Request, res: Response) => {
   res.json({ message: "API response" });
 });
 
+// Routes
 app.use("/api/auth", authRouter);
 app.use("/api/admin", adminRouter);
 app.use("/api/products", productRouter);
@@ -62,7 +54,4 @@ app.use("/api/product-images", productImageRouter);
 app.use("/api/suit-elements", suitElemntRouter);
 app.use("/api/coupons", couponRouter);
 
-app.listen(PORT, () => {
-  connectDB();
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+export default app;
