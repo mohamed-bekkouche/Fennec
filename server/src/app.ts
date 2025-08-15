@@ -21,11 +21,22 @@ dotenv.config();
 
 const app = express();
 
+// IMPORTANT: Remove the default Express body parsers
+// Don't use these when using serverless-http:
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: true }));
+
+// Custom body parser middleware ONLY
 app.use((req: Request, res: Response, next) => {
+  console.log("🔍 Custom body parser - Body type:", typeof req.body);
+  console.log("🔍 Custom body parser - Body:", req.body);
+
   // Handle Buffer body from serverless-http
   if (req.body && typeof req.body === "object" && req.body.type === "Buffer") {
     const bufferData = Buffer.from(req.body.data);
     const bodyString = bufferData.toString("utf-8");
+
+    console.log("📄 Raw body string:", bodyString);
 
     const contentType = req.get("Content-Type") || "";
 
@@ -50,12 +61,10 @@ app.use((req: Request, res: Response, next) => {
 
   next();
 });
+
 app.use(cookieParser());
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-// Read-only in production. Serving committed files is fine; don’t write here at runtime.
+// Read-only in production. Serving committed files is fine; don't write here at runtime.
 const UPLOADS_DIR = path.resolve("src/uploads");
 app.use("/uploads", express.static(UPLOADS_DIR));
 
@@ -66,17 +75,18 @@ const allowedOrigins = [
   process.env.PROD_CLIENT_ORIGIN || "", // e.g. https://your-frontend.netlify.app
   process.env.PROD_ADMIN_ORIGIN || "",
 ].filter(Boolean);
+
 app.use(cors({ origin: allowedOrigins, credentials: true }));
 
 app.get("/api/data", (_req: Request, res: Response) => {
   res.json({ message: "API response" });
 });
 
-// Add this to your app.ts for debugging
+// Test endpoint
 app.post("/api/test", (req: Request, res: Response) => {
-  console.log("Headers:", req.headers);
-  console.log("Body:", req.body);
-  console.log("Content-Type:", req.get("Content-Type"));
+  console.log("🧪 Test endpoint - Headers:", req.headers);
+  console.log("🧪 Test endpoint - Body:", req.body);
+  console.log("🧪 Test endpoint - Content-Type:", req.get("Content-Type"));
 
   res.json({
     message: "Test successful",

@@ -16,40 +16,30 @@ const getApp = async () => {
 
 exports.handler = async (event: any, context: any) => {
   try {
-    // Pre-process the body to ensure proper parsing
-    if (event.body) {
-      // If body is base64 encoded, decode it first
-      if (event.isBase64Encoded) {
-        event.body = Buffer.from(event.body, "base64").toString("utf-8");
-      }
-
-      // If it's a JSON string, keep it as string for Express to parse
-      const contentType =
-        event.headers["content-type"] || event.headers["Content-Type"] || "";
-      if (contentType.includes("application/json")) {
-        // Make sure it's a string, not already parsed
-        if (typeof event.body === "object") {
-          event.body = JSON.stringify(event.body);
-        }
-      }
-    }
+    console.log("🚀 Function called - Method:", event.httpMethod);
+    console.log("🚀 Function called - Path:", event.path);
+    console.log("🚀 Function called - Body:", event.body);
+    console.log("🚀 Function called - isBase64Encoded:", event.isBase64Encoded);
 
     const app = await getApp();
+
+    // Try with different serverless-http configuration
     const handler = serverless(app, {
-      // Configure serverless-http to handle bodies properly
-      binary: false,
-      request: (request: any, event: any) => {
-        // Ensure proper content-type handling
-        if (event.headers["content-type"]) {
-          request.headers["content-type"] = event.headers["content-type"];
-        }
+      // Don't specify binary at all, let it handle automatically
+      provider: "aws",
+      // Add request transformation
+      request: (request: any, event: any, context: any) => {
+        // Log what's being passed to Express
+        console.log("🔄 Request transformation - Body:", request.body);
+        console.log("🔄 Request transformation - Headers:", request.headers);
       },
     });
 
     const result = await handler(event, context);
+    console.log("✅ Function result status:", result.statusCode);
     return result;
   } catch (error) {
-    console.error("Function error:", error);
+    console.error("❌ Function error:", error);
     return {
       statusCode: 500,
       headers: {
