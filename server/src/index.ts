@@ -36,9 +36,6 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-// ⚠️ Serverless note: the filesystem is ephemeral on Vercel.
-// If you currently write to "src/uploads", switch to S3/Cloudinary/Vercel Blob.
-// Static-serving a local uploads folder will not persist across requests.
 const UPLOADS_DIR = path.resolve("src/uploads");
 app.use("/uploads", express.static(UPLOADS_DIR));
 
