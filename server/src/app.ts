@@ -42,6 +42,19 @@ app.get("/api/data", (_req: Request, res: Response) => {
   res.json({ message: "API response" });
 });
 
+// Add this to your app.ts for debugging
+app.post("/api/test", (req: Request, res: Response) => {
+  console.log("Headers:", req.headers);
+  console.log("Body:", req.body);
+  console.log("Content-Type:", req.get("Content-Type"));
+
+  res.json({
+    message: "Test successful",
+    body: req.body,
+    contentType: req.get("Content-Type"),
+  });
+});
+
 app.use("/api/auth", authRouter);
 app.use("/api/admin", adminRouter);
 app.use("/api/products", productRouter);
