@@ -21,9 +21,39 @@ dotenv.config();
 
 const app = express();
 
+app.use((req: Request, res: Response, next) => {
+  // Handle Buffer body from serverless-http
+  if (req.body && typeof req.body === "object" && req.body.type === "Buffer") {
+    const bufferData = Buffer.from(req.body.data);
+    const bodyString = bufferData.toString("utf-8");
+
+    const contentType = req.get("Content-Type") || "";
+
+    if (contentType.includes("application/json")) {
+      try {
+        req.body = JSON.parse(bodyString);
+        console.log("✅ Successfully parsed JSON body:", req.body);
+      } catch (e) {
+        console.error("❌ Failed to parse JSON:", e);
+        console.log("Raw body string:", bodyString);
+        req.body = {};
+      }
+    } else if (contentType.includes("application/x-www-form-urlencoded")) {
+      // Parse form data
+      const params = new URLSearchParams(bodyString);
+      req.body = Object.fromEntries(params);
+      console.log("✅ Successfully parsed form data:", req.body);
+    } else {
+      req.body = bodyString;
+    }
+  }
+
+  next();
+});
+app.use(cookieParser());
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cookieParser());
 
 // Read-only in production. Serving committed files is fine; don’t write here at runtime.
 const UPLOADS_DIR = path.resolve("src/uploads");
