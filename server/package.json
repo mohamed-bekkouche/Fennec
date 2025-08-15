@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "ts-node-dev --files --respawn src/index.ts",
     "build": "tsc",
-    "start": "node src/index.ts",
-    "vercel-build": "echo 'Building for Vercel...'"
+    "start": "node src/index.ts"
   },
   "engines": {
     "node": ">=18.x"
