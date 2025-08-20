@@ -4,7 +4,6 @@ import {
   getBrand,
   updateBrand,
 } from "../../services/brandService";
-import BrandForm from "../../components/Brands/BrandForm";
 
 const EditBrand = () => (
   <EditEntity

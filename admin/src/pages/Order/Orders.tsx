@@ -28,7 +28,7 @@ const Orders = () => {
 
   const { status, order, deliveryMethod, sortBy, orderNumber } = watch();
   const [currentPage, setCurrentPage] = useState(1);
-  const [limit, setLimit] = useState(10);
+  const [limit, _] = useState(10);
 
   const fetchOrders = async (params = {}) => {
     try {

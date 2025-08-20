@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { ResponsiveBar } from "@nivo/bar";
 import { ResponsivePie } from "@nivo/pie";
 import { ResponsiveLine } from "@nivo/line";
-import { ResponsiveCalendar } from "@nivo/calendar";
 import {
   FiDollarSign,
   FiShoppingCart,
@@ -103,13 +101,6 @@ const Dashboard: React.FC = () => {
     );
   }
 
-  // Format data for Nivo charts
-  const barChartData = data.topSellingProducts.map((product) => ({
-    id: product.name,
-    label: product.name,
-    value: product.totalSold,
-  }));
-
   const statusColors = {
     pending: "#FFC107",
     confirmed: "#03A9F4",
@@ -136,15 +127,6 @@ const Dashboard: React.FC = () => {
       })),
     },
   ];
-
-  const calendarData = Array.from({ length: 365 }, (_, i) => {
-    const date = new Date(2023, 0, 1);
-    date.setDate(date.getDate() + i);
-    return {
-      day: date.toISOString().slice(0, 10),
-      value: Math.floor(Math.random() * 1000) + 100, // Mock daily sales
-    };
-  });
 
   const statsCards = [
     {

@@ -10,7 +10,7 @@ const Users = () => {
   const [users, setUsers] = useState<IUser[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [pages, setPages] = useState(1);
-  const [limit, setLimit] = useState(10);
+  const [limit, _] = useState(10);
 
   const { register, watch } = useForm<{
     isBlocked: string | null;

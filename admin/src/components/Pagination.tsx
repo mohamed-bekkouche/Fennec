@@ -1,4 +1,3 @@
-import React from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 interface PaginationProps {
@@ -103,70 +102,5 @@ const Pagination = ({
     </div>
   );
 };
-
-// Demo Component
-function PaginationDemo() {
-  const [currentPage, setCurrentPage] = React.useState(1);
-  const totalPages = 25;
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-8">
-      <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Modern Pagination Component
-          </h1>
-          <p className="text-gray-600 text-lg">
-            A sleek, accessible pagination with smooth animations and modern
-            design
-          </p>
-        </div>
-
-        <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
-          <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full text-blue-700 font-medium">
-              <span>Current Page:</span>
-              <span className="font-bold">{currentPage}</span>
-              <span>of</span>
-              <span className="font-bold">{totalPages}</span>
-            </div>
-          </div>
-
-          <div className="flex justify-center">
-            <Pagination
-              currentPage={currentPage}
-              totalPages={totalPages}
-              onPageChange={setCurrentPage}
-            />
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white rounded-xl p-6 shadow-sm">
-            <h3 className="font-semibold text-gray-900 mb-2">
-              ✨ Modern Design
-            </h3>
-            <p className="text-gray-600 text-sm">
-              Clean, minimalist design with subtle shadows and smooth
-              transitions
-            </p>
-          </div>
-          <div className="bg-white rounded-xl p-6 shadow-sm">
-            <h3 className="font-semibold text-gray-900 mb-2">🎯 Accessible</h3>
-            <p className="text-gray-600 text-sm">
-              Full keyboard navigation, ARIA labels, and screen reader support
-            </p>
-          </div>
-          <div className="bg-white rounded-xl p-6 shadow-sm">
-            <h3 className="font-semibold text-gray-900 mb-2">🚀 Interactive</h3>
-            <p className="text-gray-600 text-sm">
-              Hover tooltips, smooth animations, and visual feedback
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 export default Pagination;
