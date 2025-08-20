@@ -7,7 +7,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   build: {
-    outDir: "../dist", // Will be further differentiated by vercel.json
+    outDir: "dist",
     emptyOutDir: true,
   },
   server: {
