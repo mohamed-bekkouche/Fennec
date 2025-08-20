@@ -8,6 +8,7 @@ interface IImage {
   fetchPriority?: "high" | "low" | "auto";
   referrerPolicy?: HTMLAttributeReferrerPolicy | undefined;
   fromServer?: boolean;
+  style?: React.CSSProperties;
 }
 
 const Image = ({
@@ -18,15 +19,17 @@ const Image = ({
   fetchPriority = "auto",
   referrerPolicy,
   fromServer = false,
+  style,
 }: IImage) => {
   return (
     <img
-      src={fromServer ? `${import.meta.env.VITE_SERVER_URL}${src}` : src}
+      src={fromServer ? `${import.meta.env.VITE_API_URL}${src}` : src}
       alt={alt}
       className={styles}
       loading={loading}
       fetchPriority={fetchPriority}
       referrerPolicy={referrerPolicy}
+      style={style}
     />
   );
 };
